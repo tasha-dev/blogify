@@ -41,7 +41,7 @@ export const metadata = {
 export default function RootLayout({children}:rootLayoutType):ReactNode {
     // Returning JSX
     return (
-        <html>
+        <html className={'dark'}>
             <body className={cn(
                 'dark:bg-black bg-white overflow-x-hidden overflow-y-auto min-h-screen',
                     InterFont.className

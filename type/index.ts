@@ -10,3 +10,14 @@ export interface containerType {
     size?: 'lg' | 'sm';
     className?: string;
 }
+
+export interface headerLinkItemType {
+    children: string;
+    className?: string;
+    href: string;
+}
+
+export interface iconType {
+    size: number;
+    name: 'moon' | 'sun' | 'list';
+}
