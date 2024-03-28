@@ -5,6 +5,7 @@ import {rootLayoutType} from "@/type";
 import {Inter} from 'next/font/google';
 import siteConfig from "@/config/siteConfig";
 import cn from "@/lib/cn";
+import '@/style/index.css';
 
 // Defining fonts
 const InterFont =  Inter({
