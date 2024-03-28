@@ -6,6 +6,7 @@ import {Inter} from 'next/font/google';
 import siteConfig from "@/config/siteConfig";
 import cn from "@/lib/cn";
 import '@/style/index.css';
+import Header from "@/component/header";
 
 // Defining fonts
 const InterFont =  Inter({
@@ -46,6 +47,7 @@ export default function RootLayout({children}:rootLayoutType):ReactNode {
                     InterFont.className
                 )}
             >
+                <Header />
                 {children}
             </body>
         </html>
