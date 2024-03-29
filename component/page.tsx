@@ -14,6 +14,7 @@ export default function Page({children}:pageType):ReactNode {
     // Returning JSX
     return (
         <motion.div
+            className={'lg:mt-[100px]'}
             variants={{
                 "hidden": {y: 20, opacity: 0},
                 "visible": {y: 0, opacity: 100}

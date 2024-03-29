@@ -3,3 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Defining custom styles*/
+@layer base {
+    h1 {@apply lg:text-[48px] md:text-[36px] text-[24px] dark:text-white text-black}
+    h2 {@apply lg:text-[44px] md:text-[32px] text-[20px] dark:text-white text-black}
+    h3 {@apply lg:text-[40px] md:text-[28px] text-[18px] dark:text-white text-black}
+    h4 {@apply lg:text-[36px] md:text-[24px] text-[14px] dark:text-white text-black}
+    h5 {@apply lg:text-[32px] text-[20px] dark:text-white text-black}
+    h6 {@apply lg:text-[28px] text-[16px] dark:text-white text-black}
+    p {@apply lg:text-[20px] md:text-[18px] text-[16px] dark:text-white text-black}
+}
