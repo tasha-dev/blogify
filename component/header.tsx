@@ -3,19 +3,17 @@
 'use client';
 
 // Importing part
-import {ReactNode, useState} from "react";
+import {ReactNode} from "react";
 import {motion} from "framer-motion";
 import Link from 'next/link';
 import LinkItem from '@/component/ui/header/linkItem';
 import Container from '@/component/ui/container';
 import ThemeToggler from "@/component/ui/header/themeToggler";
-import Icon from "@/component/ui/icon";
+import Drawer from "@/component/drawer/drawer";
+import DrawerItem from "@/component/drawer/drawerItem";
 
 // Creating and exporting header component as default
 export default function Header():ReactNode {
-    // Defining states of component
-    const [opened, setOpened] = useState<boolean>(false);
-
     // Returning JSX
     return (
         <motion.header
@@ -29,10 +27,15 @@ export default function Header():ReactNode {
             <Container className={'flex items-center justify-between gap-[20px]'}>
                 <Link className={'truncate block text-[20px] font-medium dark:text-white text-black'} href={'/'}>Blogify</Link>
                 <ul className={'shrink-0 flex z-[50] items-center justify-between gap-[20px]'}>
-                    <LinkItem className={'lg:w-auto w-full lg:p-0 p-[10px]'} href={'/about-us'}>About</LinkItem>
-                    <LinkItem className={'lg:w-auto w-full lg:p-0 p-[10px]'} href={'/blog'}>Blog</LinkItem>
-                    <LinkItem className={'lg:w-auto w-full lg:p-0 p-[10px]'} href={'/tags'}>Tags</LinkItem>
-                    <ThemeToggler/>
+                    <LinkItem href={'/about-us'}>About</LinkItem>
+                    <LinkItem href={'/blog'}>Blog</LinkItem>
+                    <LinkItem href={'/tags'}>Tags</LinkItem>
+                    <Drawer className={'lg:hidden block'}>
+                        <DrawerItem href={'/about-us'}>About</DrawerItem>
+                        <DrawerItem href={'/blog'}>Blog</DrawerItem>
+                        <DrawerItem href={'/tags'}>Tags</DrawerItem>
+                    </Drawer>
+                    <ThemeToggler />
                 </ul>
             </Container>
         </motion.header>

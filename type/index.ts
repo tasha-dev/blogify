@@ -21,3 +21,13 @@ export interface iconType {
     size: number;
     name: 'moon' | 'sun' | 'list';
 }
+
+export interface drawerType {
+    children: ReactNode;
+    className?: string;
+}
+
+export interface drawerItemType {
+    children: string;
+    href: string;
+}

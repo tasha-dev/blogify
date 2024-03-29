@@ -10,9 +10,7 @@ const config: Config = {
         './app/**/*.{ts,tsx,js,jsx}',
         './app/**/**/*.{ts,tsx,js,jsx}',
         './component/*.{ts,tsx,js,jsx}',
-        './component/**/*.{ts,tsx,js,jsx}',
-        './component/ui/*.{ts,tsx,js,jsx}',
-        './component/ui/**/*.{ts,tsx,js,jsx}',
+        './component/**/*.{ts,tsx,js,jsx}'
     ],
     theme: {},
     plugins: [],
