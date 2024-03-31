@@ -5,6 +5,9 @@ import Page from "@/component/page";
 import Image from "next/image";
 import mountainImage from '@/images/img-mountain.jpg';
 
+// Defining metadata of this page
+export const metadata = {title: 'Not Found'}
+
 // Creating and exporting 404 page as default
 export default function NotFoundPage():ReactNode {
     // Returning JSX

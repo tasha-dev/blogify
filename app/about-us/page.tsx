@@ -4,30 +4,28 @@ import {ReactNode} from "react";
 import Page from "@/component/page";
 import Image from "next/image";
 import mountainImage from '@/images/img-mountain.jpg';
-import ArticleApiRender from "@/component/articleApiRender";
 
 // Defining metadata of this page
-export const metadata = {title: 'Home'}
+export const metadata = {title: 'About Us'}
 
-// Creating and exporting home page as default
-export default function HomePage():ReactNode {
+// Creating and exporting About us page as default
+export default function AboutUsPage():ReactNode {
     // Returning JSX
     return (
         <Page>
             <section className={'lg:mb-[100px] mb-[50px]'}>
-                <header>
-                    <h1 className={'lg:mb-[30px] mb-[10px]'}>Blogify - a Minimalist Blog Which Gets Its Data From Dev.to.</h1>
-                    <p className={'lg:mb-[30px] mb-[10px]'}>“Blogiy” is a, well themed blog app designed by nrk9819 and its developed by mahdi tasha. This app gets its data from dev.to Database.</p>
+                <header className={'lg:mb-[30px] mb-[10px]'}>
+                    <h1>About Blogify</h1>
                 </header>
                 <main>
                     <Image src={mountainImage.src} alt={'Image of mountain from unsplash'} width={820} height={500} className={'rounded-[10px] object-cover w-full lg:h-[500px] md:h-[380px] sm:h-[340px] h-[300px]'} />
                 </main>
             </section>
             <section>
-                <header className={'lg:mb-[30px] mb-[20px]'}>
-                    <h6>Recent Publications</h6>
-                </header>
-                <ArticleApiRender />
+                <main>
+                    <p className={'mb-[30px]'}>Blogify is a “blog” app designed for simplicity and minimalism. It is particularly suitable for personal blogs. It is designed by nrk9819. The figma design file available to download for free 🤩 under CC BY 4.4</p>
+                    <p>It gets its content, and in general its data from dev.to website api</p>
+                </main>
             </section>
         </Page>
     );

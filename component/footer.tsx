@@ -9,7 +9,7 @@ import LinkItem from "@/component/ui/footer/linkItem";
 export default function Footer():ReactNode {
     // Returning JSX
     return (
-        <footer>
+        <footer className={'lg:mt-[100px] md:mt-[50px]'}>
             <div className={'border-b dark:border-b-white/20 border-b-black/20'}>
                 <Container className={'flex lg:flex-row flex-col items-start justify-between gap-[20px] flex-wrap'}>
                     <div>
