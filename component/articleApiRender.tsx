@@ -16,20 +16,22 @@ export default function ArticleApiRender():ReactNode {
     // Returning JSX
     return (
         <main>
-            {
-                (articles.isLoading)
-                    ? (
-                        <div className={'flex items-center justify-center'}>
-                            <Loading />
-                        </div>
-                    ) : articles.data.slice(0, 4).map((item, index) => (
-                        <Article
-                            date={item.date}
-                            tags={item.tags}
-                            title={item.title}
-                        />
-                ))
-            }
+            <ul className={'flex flex-col gap-[20px]'}>
+                {
+                    (articles.isLoading)
+                        ? (
+                            <div className={'flex items-center justify-center'}>
+                                <Loading />
+                            </div>
+                        ) : articles.data.slice(0, 4).map((item, index) => (
+                            <Article
+                                date={item.date}
+                                tags={item.tags}
+                                title={item.title}
+                            />
+                        ))
+                }
+            </ul>
         </main>
     );
 }
