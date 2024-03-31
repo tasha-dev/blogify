@@ -12,9 +12,9 @@ export default function Article({title, date, tags}:articleType):ReactNode {
     return (
         <li>
             <article>
-                <Link href={'#'} className={'flex lg:flex-row flex-col'}>
+                <Link href={'#'} className={'flex lg:flex-row flex-col gap-[20px]'}>
                     <div className={'lg:w-[75%] w-full'}>
-                        <div className={'flex items-center justify-start flex-wrap gap-[10px] mb-[20px]'}>
+                        <div className={'flex items-center justify-start flex-wrap gap-[10px] lg:mb-[20px]'}>
                             <span className={'text-[12px] md:font-medium font-light dark:text-white text-black'}>
                                 {new Date(date).toLocaleDateString('us-EN', {
                                     weekday: "long",
@@ -39,7 +39,7 @@ export default function Article({title, date, tags}:articleType):ReactNode {
                         alt={title}
                         width={163}
                         height={105}
-                        className={'lg:w-[25%] w-full h-auto rounded-[10px] object-cover'}
+                        className={'rounded-[10px] object-cover w-full lg:h-[500px] md:h-[380px] sm:h-[340px] h-[300px] lg:w-[25%] w-full'}
                     />
                 </Link>
             </article>

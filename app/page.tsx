@@ -17,7 +17,7 @@ export default function HomePage():ReactNode {
                     <p className={'lg:mb-[30px] mb-[10px]'}>“Blogiy” is a, well themed blog app designed by nrk9819 and its developed by mahdi tasha. This app gets its data from dev.to Database.</p>
                 </header>
                 <main>
-                    <Image src={mountainImage.src} alt={'Image of mountain from unsplash'} width={820} height={500} className={'rounded-[10px] object-cover w-full lg:h-[500px] md:h-[380px] sm:h-[340px] h-[300px]'}/>
+                    <Image src={mountainImage.src} alt={'Image of mountain from unsplash'} width={820} height={500} className={'rounded-[10px] object-cover w-full lg:h-[500px] md:h-[380px] sm:h-[340px] h-[300px]'} />
                 </main>
             </section>
             <section>
