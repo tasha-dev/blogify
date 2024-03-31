@@ -7,12 +7,12 @@ import Link from "next/link";
 import mountainImage from '@/images/img-mountain.jpg';
 
 // Creating and exporting article component as default
-export default function Article({title, date, tags}:articleType):ReactNode {
+export default function Article({title, date, tags, id}:articleType):ReactNode {
     // Returning JSX
     return (
         <li>
             <article>
-                <Link href={'#'} className={'flex lg:flex-row flex-col gap-[20px]'}>
+                <Link href={`/blog/${id}`} className={'flex lg:flex-row flex-col gap-[20px]'}>
                     <div className={'lg:w-[75%] w-full'}>
                         <div className={'flex items-center justify-start flex-wrap gap-[10px] lg:mb-[20px]'}>
                             <span className={'text-[12px] md:font-medium font-light dark:text-white text-black'}>

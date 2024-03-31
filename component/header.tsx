@@ -28,12 +28,8 @@ export default function Header():ReactNode {
                 <Link className={'truncate block text-[20px] font-medium dark:text-white text-black'} href={'/'}>Blogify</Link>
                 <ul className={'shrink-0 flex z-[50] items-center justify-between gap-[20px]'}>
                     <LinkItem href={'/about-us'}>About</LinkItem>
-                    <LinkItem href={'/blog'}>Blog</LinkItem>
-                    <LinkItem href={'/tags'}>Tags</LinkItem>
                     <Drawer className={'lg:hidden block'}>
                         <DrawerItem href={'/about-us'}>About</DrawerItem>
-                        <DrawerItem href={'/blog'}>Blog</DrawerItem>
-                        <DrawerItem href={'/tags'}>Tags</DrawerItem>
                     </Drawer>
                     <ThemeToggler />
                 </ul>

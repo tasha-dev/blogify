@@ -25,6 +25,8 @@ export default function ArticleApiRender():ReactNode {
                             </div>
                         ) : articles.data.slice(0, 4).map((item, index) => (
                             <Article
+                                key={index}
+                                id={item.id}
                                 date={item.date}
                                 tags={item.tags}
                                 title={item.title}

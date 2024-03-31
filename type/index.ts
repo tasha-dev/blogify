@@ -36,10 +36,19 @@ export interface articleType {
     date: string;
     tags: string[] | undefined;
     title: string;
+    id: number;
 }
 
 export interface footerLinkItem {
     children: string;
     className?: string;
     href: string;
+}
+
+export interface blogType {
+    date: string;
+    title: string;
+    tags: string[];
+    description: string;
+    body_markdown: string;
 }

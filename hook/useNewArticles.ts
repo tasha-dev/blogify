@@ -24,7 +24,8 @@ export default function useNewArticles():{ isLoading: boolean, data: articleType
                     emptyArray.push({
                         date: item.published_at,
                         tags: item.tag_list,
-                        title: item.title
+                        title: item.title,
+                        id: item.id
                     })
                 })
 
