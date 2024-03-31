@@ -19,7 +19,7 @@ export interface headerLinkItemType {
 
 export interface iconType {
     size: number;
-    name: 'moon' | 'sun' | 'list';
+    name: 'moon' | 'sun' | 'list' | 'up-right-arrow';
 }
 
 export interface drawerType {
@@ -36,4 +36,10 @@ export interface articleType {
     date: string;
     tags: string[] | undefined;
     title: string;
+}
+
+export interface footerLinkItem {
+    children: string;
+    className?: string;
+    href: string;
 }

@@ -13,4 +13,5 @@
     h5 {@apply lg:text-[32px] text-[20px] dark:text-white text-black}
     h6 {@apply lg:text-[28px] text-[16px] dark:text-white text-black}
     p {@apply lg:text-[20px] md:text-[18px] text-[16px] dark:text-white text-black}
+    p a {@apply underline underline-offset-4 font-bold}
 }
