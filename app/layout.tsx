@@ -7,6 +7,7 @@ import siteConfig from "@/config/siteConfig";
 import cn from "@/lib/cn";
 import '@/style/index.css';
 import Header from "@/component/header";
+import {Toaster} from "sonner";
 
 // Defining fonts
 const InterFont =  Inter({
@@ -47,6 +48,13 @@ export default function RootLayout({children}:rootLayoutType):ReactNode {
                     InterFont.className
                 )}
             >
+                <Toaster toastOptions={{
+                    classNames: {
+                        toast: 'dark:bg-black bg-white dark:border-white/20 border-black/20',
+                        title: 'dark:text-white text-black',
+                        icon: 'text-red-600'
+                    }
+                }} />
                 <Header />
                 {children}
             </body>

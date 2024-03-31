@@ -4,6 +4,7 @@ import {ReactNode} from "react";
 import Page from "@/component/page";
 import Image from "next/image";
 import mountainImage from '@/images/img-mountain.jpg';
+import ArticleApiRender from "@/component/articleApiRender";
 
 // Creating and exporting home page as default
 export default function HomePage():ReactNode {
@@ -20,14 +21,10 @@ export default function HomePage():ReactNode {
                 </main>
             </section>
             <section>
-                <header>
+                <header className={'lg:mb-[30px] mb-[20px]'}>
                     <h6>Recent Publications</h6>
                 </header>
-                <main>
-                    <ul>
-
-                    </ul>
-                </main>
+                <ArticleApiRender />
             </section>
         </Page>
     );

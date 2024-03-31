@@ -36,5 +36,4 @@ export interface articleType {
     date: string;
     tags: string[] | undefined;
     title: string;
-    image: string | null;
 }
