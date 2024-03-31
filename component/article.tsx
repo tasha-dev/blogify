@@ -39,7 +39,7 @@ export default function Article({title, date, tags}:articleType):ReactNode {
                         alt={title}
                         width={163}
                         height={105}
-                        className={'rounded-[10px] object-cover w-full lg:h-[500px] md:h-[380px] sm:h-[340px] h-[300px] lg:w-[25%] w-full'}
+                        className={'rounded-[10px] object-cover lg:h-full md:h-[380px] sm:h-[340px] h-[300px] lg:w-[25%] w-full'}
                     />
                 </Link>
             </article>
