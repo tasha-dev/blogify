@@ -15,5 +15,5 @@
     p {@apply lg:text-[20px] md:text-[18px] text-[16px] dark:text-white text-black}
     p a {@apply underline underline-offset-4 font-bold}
 
-    .markdown :is(h1,h2,h3,h4,h5,h6,p):not(:last-of-type) {@apply lg:mb-[30px] mb-[10px];}
+    .markdown :is(h1,h2,h3,h4,h5,h6,p) {@apply lg:mb-[29px] mb-[10px];}
 }

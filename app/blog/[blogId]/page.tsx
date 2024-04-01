@@ -41,10 +41,10 @@ export default function BlogPage():ReactNode {
                                                 day: "numeric",
                                             })}
                                         </span>
-                                        <span className={'text-[12px] md:font-medium font-light dark:text-white text-black'}>In</span>
+                                        { data.data.tags.length !== 0 && <span className={'text-[12px] md:font-medium font-light dark:text-white text-black'}>In</span> }
                                         <div className={'flex items-center flex-wrap gap-[10px]'}>
                                             {
-                                                data.data.tags?.map((item, index) => (
+                                                data.data.tags.length !== 0 && data.data.tags?.map((item, index) => (
                                                     <span
                                                         className={'text-[12px] md:font-medium font-light dark:text-white text-black'}
                                                         key={index}>#{item}</span>
